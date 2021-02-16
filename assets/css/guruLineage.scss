@@ -1,0 +1,86 @@
+.card-text-content-style {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.card-subtext-content-style {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  align-items: center;
+  color: #585858;
+}
+
+.image-size-style {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+.title-text-style {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+.card-item-style {
+  border: none;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  background-color: #000;
+  padding: 16px;
+  margin: 0px;
+}
+
+.tree-line {
+  width: 1px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #000;
+  border: 1px solid #000000;
+  transform: rotate(0deg);
+}
+
+.branch-tree-split {
+  width: 432.5px;
+  height: 53px;
+  border: 1px solid #000000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-color: #ffffff;
+  margin-bottom: 5px;
+}
+.orgchart-container {
+  height: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.rowField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.orgchart {
+  background-image: none;
+}
+.nodeView {
+  width: 250px;
+  background-color: #000;
+  border-radius: 10;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem;
+}

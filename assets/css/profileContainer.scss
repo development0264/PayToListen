@@ -1,0 +1,59 @@
+@import './flexStyles.scss';
+
+.title-text-style {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+
+  color: #ffffff;
+}
+
+.card-item-style {
+  background-color: #000;
+  padding: 16px;
+  margin: 0px;
+}
+
+.title-paragraph-style {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000;
+}
+
+.image-fixture-end {
+  @include flex-just(flex-end);
+}
+
+.no-profile-display {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  @include flex-alignItems(center);
+}
+
+.save-button-social-media {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  @include flex;
+  @include flex-alignItems(center);
+  color: #ffffff;
+}
+.doneBtn {
+  color: #28a745;
+  font-size: 30px;
+}
+.profileCardView {
+  border: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+}
+.profileCardBody {
+  background-color: #ffffff;
+  min-height: 300px;
+}

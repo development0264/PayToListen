@@ -1,0 +1,59 @@
+@import './flexStyles.scss';
+
+.fMainContainer {
+  //   @include flex;
+  //   @include flex-just(center);
+  //   @include flex-dir(column);
+}
+.smediaContainer {
+  position: relative;
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+  padding: 1rem 0;
+  background-color: #000000;
+}
+.media {
+  margin: 0 1rem;
+}
+.media img {
+  width: 60px;
+  height: 60px;
+}
+.footerContainer {
+  margin: 0;
+  padding-top: 1rem;
+}
+.copyright {
+  color: #98a3b9;
+  font-size: 16px;
+  line-height: 20px;
+}
+.bold {
+  color: #000000;
+}
+.flogo {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+}
+.flexCenter {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+}
+.policy {
+  @include flex-just(space-around);
+  @include flex-alignItems(center);
+  @include flex;
+}
+.policRow {
+  width: 100%;
+}
+.pvtxt {
+  margin: 0;
+  color: #98a3b9;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.13;
+}

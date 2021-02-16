@@ -1,0 +1,189 @@
+.albumImage {
+  width: 106px;
+  height: 84px;
+  object-fit: contain;
+}
+.fileContainer {
+  max-height: 200px;
+  overflow: auto;
+}
+.fileRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+.fileNames {
+  width: 50%;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.duration {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 1rem;
+  color: #999999;
+  height: 50px;
+}
+.playIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.metaModal-50ws {
+  max-width: 850px;
+}
+.metaFileContainer {
+}
+.metaBox {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+.activeMetaBox {
+  border: 1px solid #fa5477;
+  border-left-width: 5px;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.metaFileRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+.content {
+  width: 80%;
+}
+.btnContent {
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.metaBtn {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 3px;
+  text-transform: uppercase;
+  background-color: #000000;
+}
+.activeMetaBtn {
+  background-color: #29cc5e;
+  color: #ffffff;
+}
+.metaInputContainer {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+.inputContainer {
+  max-height: 80%;
+  overflow: auto;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.progressWithBtnContainer {
+  height: 5%;
+  display: flex;
+}
+.prevNextBtns {
+  display: flex;
+  justify-content: flex-end;
+  height: 50%;
+}
+.progressContainer {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.progressBlock {
+  flex: 1;
+  background-color: #585858;
+  border-right: 0.5px solid #ffffff;
+  cursor: pointer;
+}
+.activeBlock {
+  flex: 1;
+  background-color: #fa5477;
+  border: 0.5px solid #24f202;
+  cursor: pointer;
+}
+.visitedBlock {
+  flex: 1;
+  background-color: #24f202;
+  border-right: 0.5px solid #ffffff;
+  cursor: pointer;
+}
+.metaInput {
+  border: none;
+  padding: 0 5px;
+  background-color: transparent;
+  height: 25px;
+  margin: 0.2rem 0.5rem;
+}
+[contenteditable][placeholder]:empty:before {
+  content: attr(placeholder);
+  position: absolute;
+  color: gray;
+  background-color: transparent;
+}
+.metaDataValue {
+  background-color: #ed5454;
+  border-radius: 15px;
+  padding: 0 0.5rem;
+  margin: 0.2rem 0.5rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.metaDataInput {
+  width: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.metaValueTxt {
+  margin: 0 0.5rem;
+}
+.rmMeta {
+  margin: 5px;
+}
+.textInput {
+  background-color: #f1f1f1;
+  font-family: Nunito;
+}
+.dropPanel {
+  height: 150px;
+}
+.dropZone {
+  outline: none;
+  border: 2px dashed #dbe0e6;
+  border-radius: 8px;
+}
+.activeDrag {
+  border-color: #fa5477;
+}

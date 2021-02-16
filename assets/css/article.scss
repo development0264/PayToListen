@@ -1,0 +1,720 @@
+@import './flexStyles.scss';
+
+.articleContainer {
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(space-evenly);
+  @include flex-alignSelf(stretch);
+}
+.navBadge {
+  width: 125px;
+  height: 40px;
+}
+.artistBadge {
+  cursor: pointer;
+  @include flex;
+  @include flex-dir(row);
+  @include flex-just(space-around);
+  @include flex-alignItems(center);
+  background-color: #3b43f2;
+  border-radius: 25px;
+  padding: 4px 12px;
+  margin: 0.5rem 0;
+  outline: none;
+  width: 145px;
+}
+.whiteBadge {
+  /* padding: 5px 30px 5px 4px; */
+  width: 125px;
+  background-color: #ffffff;
+}
+.redTxt {
+  color: #fa5477;
+}
+.bdg {
+  background-color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+}
+.artbdTxt {
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+.plus,
+.up-arrow {
+  color: #ffffff;
+  font-size: 26px;
+}
+.eventTxt {
+  margin-left: 26px;
+}
+.artistMainContent {
+  /* margin-top: 3em; */
+}
+.artistContent {
+  color: #ffffff;
+}
+.profileContent {
+  color: #000000;
+}
+.artImg {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.leftCard {
+  padding: 2em 1em;
+  background-color: #000000;
+  border-radius: 20px;
+  /* box-shadow: 0px 2px 104px #e5e5e5; */
+}
+.artistView {
+  margin: 2em 0;
+}
+.artcardName {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.artcardName + p,
+.atName,
+.atPos,
+.atdbName,
+.atdob {
+  font-size: 15px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.d-flex-start-center {
+  @include flex;
+  @include flex-just(flex-start);
+  @include flex-alignItems(center);
+  @include flex-wrap(wrap);
+}
+.iniName,
+.dob {
+  color: #999;
+}
+.imgBlog {
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(center);
+  @include flex-alignItems(center);
+}
+.toolBox {
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(space-between);
+  @include flex-alignItems(center);
+  height: 100px;
+  width: 50px;
+  border-radius: 40px;
+  background-color: #f2f2f2;
+  padding: 10px 2px;
+}
+.rightCard {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+}
+.detailsContainer {
+  background-color: #ffffff;
+  padding: 5px 10px;
+}
+.detailsContainer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2124;
+  margin-bottom: 15px;
+}
+.detailsContainer p {
+  color: #1f2124;
+  text-align: justify;
+}
+.leftNav {
+  /* background-color: #844da0; */
+  text-align: center;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 1rem 0 0;
+}
+.menuItem {
+  padding: 1rem 0;
+  color: #ffffff;
+  outline: none;
+}
+.addMenuItem {
+  margin-bottom: 1rem;
+  color: #fcd801;
+  outline: none;
+}
+.menuItem span,
+.addMenuItem span {
+  color: #ffffff;
+  display: inline-block;
+  width: 100%;
+}
+.newLabel span {
+  color: #fcd801;
+}
+.menuItem span:hover,
+.addMenuItem span:hover {
+  color: lightblue;
+  cursor: pointer;
+}
+.menuItem.activeMenu {
+  padding: 0.5rem 0;
+}
+.addBtn {
+  margin: 1rem 0;
+}
+.menuItem.activeMenu span {
+  background-color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 20px;
+  color: #000000;
+}
+.menuItem.activeMenu span .trashIcon {
+  bottom: 12px;
+}
+.navbtn {
+  color: #ffffff;
+  text-align: center;
+}
+.navbtn.active {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 5px;
+  color: #000000;
+}
+
+.hr {
+  margin: 1rem 0;
+  border-bottom: 2px solid gray;
+}
+.authLogin {
+  text-align: center;
+  margin: 2rem 0 0;
+  font-weight: bold;
+}
+.loginTitle {
+  font-weight: bold;
+  font-size: 20px;
+}
+.edit {
+  cursor: pointer;
+}
+.edit:hover {
+  color: #fa5477;
+}
+.lgBody {
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(center);
+  @include flex-alignItems(center);
+  padding: 0 4rem 1rem;
+}
+.pendingBody {
+  @include flex;
+  @include flex-dir(column);
+  padding: 0 4rem;
+}
+.align-center {
+  text-align: center;
+}
+.lgBtn {
+  border-radius: 20px;
+  margin: 0.5rem 0;
+  width: 50%;
+}
+.formInput {
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+.labelSt {
+  margin: 0;
+  font-size: 14px;
+}
+.uploadImg {
+  position: relative;
+}
+.uploadImg:hover {
+}
+.backdrop {
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.backdrop span {
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 55px;
+  @include flex;
+  @include flex-just(center);
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.newImageActions {
+  @include flex;
+  @include flex-dir(row);
+  @include flex-just(space-around);
+  @include flex-alignItems(center);
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: -25px;
+}
+.trashIcon {
+  position: absolute;
+  right: 12px;
+  bottom: 5px;
+  color: #cc1c34;
+}
+.trashIcon:hover {
+  color: #b96a75;
+}
+.newSkillContainer {
+  margin: 1rem 0;
+}
+.currentSkill {
+  margin: 0.2rem;
+  border-radius: 30px;
+  background-color: #ed5454;
+  border-color: #ed5454;
+  //   font-size: 20px;
+  padding: 0 0.7rem;
+}
+.currentSkill.btn-primary:hover {
+  background-color: #cc1c34;
+  border-color: #cc1c34;
+}
+.currentSkill.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #ed5454;
+  border-color: #ed5454;
+}
+.currentSkill.btn-primary:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+.modal-header .close {
+  padding: 0;
+  margin: 0;
+}
+button.close {
+  width: 25px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #3c3c3c;
+}
+.close span {
+  font-weight: normal;
+  color: #ffffff;
+  text-shadow: none;
+}
+.modal-header {
+  border-bottom: none;
+}
+.pmuImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+.modal-footer {
+  @include flex-dir(column);
+  @include flex-just(center);
+  border-top: none;
+  margin-top: 3rem;
+}
+.footerTxt {
+  color: #3b43f2;
+  font-weight: 800;
+}
+.normalCursor {
+  cursor: auto;
+}
+.fa-sign-out {
+  background-color: #fa5477;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin: 0 0.2rem;
+  margin-left: -10px;
+  text-align: center;
+  padding: 6px 9px;
+}
+.edit button {
+  color: #fcd801;
+}
+.articleContent {
+  position: relative;
+  min-height: 100vh;
+  @include flex;
+  @include flex-just(space-between);
+  @include flex-dir(column);
+  @include flex-alignSelf(center);
+}
+.requireMedia {
+  width: 200px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+/* Event Calendar... */
+.uploadImgTxt {
+  color: #58cb7d;
+  cursor: pointer;
+  display: inline-block;
+}
+.emptyCtn {
+  height: 7rem;
+}
+.calendarContainer {
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(space-between);
+  @include flex-alignItems(stretch);
+  position: relative;
+  min-height: 100vh;
+  color: #ffffff;
+}
+.fc {
+  margin: 1rem 0;
+}
+.fc-view-harness {
+  background-color: #000000;
+}
+.fc-toolbar-chunk div {
+  @include flex;
+  @include flex-dir(row);
+  @include flex-just(center);
+  @include flex-alignSelf(center);
+}
+.fc-prev-button.btn-primary,
+.fc-next-button.btn-primary {
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.fc-prev-button.btn-primary:not(:disabled):not(.disabled):active,
+.fc-next-button.btn-primary:not(:disabled):not(.disabled):active {
+  color: #fcd801;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow: none;
+}
+.cal-create-event-by {
+  padding: 0 2rem;
+}
+.createEventImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.fc-timeGridWeek-button.btn.btn-primary,
+.fc-dayGridMonth-button.btn.btn-primary {
+  background-color: transparent;
+  border-color: #efefef;
+  color: #a8b2b9;
+}
+
+.fc-timeGridWeek-button.btn.btn-primary:hover,
+.fc-dayGridMonth-button.btn.btn-primary:hover {
+  box-shadow: 1px 2px 3px #efefef;
+}
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: #000000;
+  border-color: #efefef;
+  color: #ffffff;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:focus {
+  box-shadow: none;
+}
+.react-datetime-picker {
+  width: 100%;
+}
+.react-datetime-picker__inputGroup__input,
+.react-datetime-picker__inputGroup__leadingZero {
+  /* font: normal small-caps expanded 12px Nunito !important; */
+  font-family: Nunito !important;
+  font-size: 13px !important;
+  color: #495057;
+}
+.react-calendar__month-view__weekdays__weekday {
+  font-family: Nunito !important;
+}
+.react-calendar__tile.react-calendar__month-view__days__day {
+  font-size: 13px;
+  font-family: Nunito;
+}
+.react-datetime-picker__wrapper {
+  border-radius: 5px;
+  height: 2rem;
+  background-color: #f1f1f1;
+}
+.fieldRow {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.listItems {
+  display: none;
+  position: absolute;
+  width: 87%;
+  max-height: 150px;
+  overflow: auto;
+  box-shadow: 1px 0 5px #999;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  z-index: 9999;
+}
+.innerListItem {
+  height: 100%;
+}
+.list-group-item {
+  padding: 0.25rem 1rem;
+  color: #000000;
+}
+.list-group-item:hover {
+  cursor: pointer;
+}
+.active.list-group-item {
+  background-color: #a8b2b9;
+  border-color: #a8b2b9;
+  color: #3c3c3c;
+}
+.addPerformer {
+  font-size: 25px;
+  color: #29cc5e;
+  cursor: pointer;
+}
+.addPerfCol {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(flex-end);
+  margin-bottom: 8px;
+}
+.p-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+.rmovePerf {
+  color: #cc1c34;
+  font-size: 20px;
+  cursor: pointer;
+}
+.center-flex {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+}
+.selectedPerfRow {
+  margin: 0.5rem 0;
+  max-height: 300px;
+  padding: 0.2rem 0;
+  z-index: 9999;
+}
+.mainArtist {
+  background-color: #b96a75;
+}
+.selectedPerfRow:hover {
+  cursor: pointer;
+  background-color: #495057;
+}
+.first-flex {
+  @include flex;
+  @include flex-just(flex-start);
+  @include flex-alignItems(center);
+}
+.end-flex {
+  @include flex;
+  @include flex-just(flex-end);
+  @include flex-alignItems(center);
+}
+.end-end-flex {
+  @include flex;
+  @include flex-just(flex-end);
+  @include flex-alignItems(flex-end);
+}
+.center-end-flex {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(flex-end);
+}
+.center-start-flex {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(flex-start);
+}
+.actionBtnRow {
+  width: 220px;
+  @include flex;
+  @include flex-just(space-between);
+  @include flex-alignItems(center);
+}
+.createNew {
+  color: #3b43f2;
+  font-family: Nunito;
+  font-size: 12px;
+}
+.createNewImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+}
+.coll-modal {
+  background-color: #1f2124;
+}
+.spinnerContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+.profileSpinnerCtn {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0px auto;
+  z-index: 99999;
+}
+.inputSpinner {
+  position: absolute;
+  right: 0.5rem;
+  top: 1.7rem;
+}
+label {
+  font-family: Nunito;
+  font-size: 14px;
+}
+.freeEvent {
+  background-color: rgba(88, 203, 125, 0.2);
+  color: #58cb7d;
+  border-left: 3px solid #58cb7d;
+  width: 100%;
+  word-break: break-all;
+}
+.paidEvent {
+  background-color: rgba(254, 184, 0, 0.2);
+  color: #feb800;
+  border-left: 3px solid #feb800;
+}
+.fc-daygrid-day:hover,
+.fc-daygrid-event-harness:hover {
+  cursor: pointer;
+}
+
+.userMedia {
+  margin: 1rem 0 !important;
+}
+.userMedia img {
+  width: 30px;
+  height: 30px;
+}
+.profileMedia {
+  margin: 0.5rem;
+  color: #cc1c34;
+}
+.mediaContainer {
+  width: 480px;
+  @include flex;
+  @include flex-just(flex-start);
+  @include flex-alignItems(center);
+}
+.editableBox {
+  border: 2px dotted #a8b2b9;
+  border-radius: 10px;
+  height: auto;
+  padding: 5px;
+  cursor: pointer;
+}
+.editableMediaLink {
+  color: #cc1c34;
+  font-size: 16px;
+}
+.editableMedia {
+  cursor: pointer;
+  outline: none;
+}
+.skillBtn {
+  height: 2rem;
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+  margin: 0 1rem;
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+.addSkillIcon {
+  font-size: 20px;
+}
+.addGuruIcon {
+  font-size: 20px;
+  color: #fa5477;
+}
+.panel-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.react-confirm-alert-body {
+  background: #1f2124;
+  color: #ffffff;
+}
+.react-confirm-alert-body h1 {
+  font-size: 24px;
+}
+.diagram-component {
+  width: 700px;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 320px) {
+  .artcardName {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
