@@ -1,0 +1,19 @@
+.coll-modal {
+  background-color: #1f2124;
+}
+.pendingBody {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+.cal-create-event-by {
+  padding: 0 2rem;
+}
+.fieldRow {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.labelSt {
+  margin: 0;
+  font-size: 14px;
+}

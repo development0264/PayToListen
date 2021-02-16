@@ -1,0 +1,713 @@
+@import './flexStyles.scss';
+
+.white {
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: none;
+}
+.searchBgColor {
+  position: relative;
+}
+.emptyContainerL {
+  @include flex;
+  @include flex-just(center);
+  height: 200px;
+}
+.searchContainer {
+  margin: 1rem auto 0 auto;
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(flex-end);
+}
+.searchInnerContainer {
+  height: 300px;
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(flex-end);
+  position: relative;
+}
+.boxContent {
+  height: 150px;
+  position: relative;
+}
+.searchBox {
+  @include flex;
+  @include flex-dir(column);
+  @include flex-just(flex-start);
+  position: relative;
+}
+.searchInput {
+  height: 3rem;
+  border-radius: 2rem;
+  padding: 0 6rem 0 2rem;
+}
+.searchFocus {
+  border-radius: 2rem 2rem 0 0;
+}
+.searchIcons {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 65px;
+  @include flex;
+  @include flex-just(space-between);
+  @include flex-alignItems(center);
+  color: #ffffff;
+}
+.withClose {
+  width: 85px;
+  background-color: #ffffff;
+  padding: 0 3px;
+}
+.searchIcons i,
+.searchIcons span {
+  cursor: pointer;
+}
+.searchIcons .close {
+  font-size: 18px;
+  color: #707070;
+}
+.searchIcons .fa-microphone,
+.searchIcons .fa-pause {
+  color: #844da0;
+}
+.searchIcons .fa-search {
+  background-color: #fa5477;
+  width: 40px;
+  height: 25px;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 4px;
+}
+.listingContainer {
+  @include flex;
+  @include flex-just(flex-start);
+  @include flex-dir(column);
+  background-color: white;
+  width: 100%;
+  padding: 0 2rem;
+  border-radius: 0 0 2rem 2rem;
+  z-index: 999;
+  position: absolute;
+}
+.listboxCtn {
+  position: absolute;
+  top: 47px;
+  padding: 1rem 2rem;
+  border-top: 1px solid gray;
+  z-index: 9999;
+}
+.searchTitle {
+  color: #707070;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0.5rem 0;
+}
+.searchMenu {
+  color: #fa5477;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 10px 2px;
+}
+.searchMenu:hover {
+  color: #ffffff;
+  background-color: #fa5477;
+  cursor: pointer;
+}
+.recentSearch {
+  color: #000000;
+  width: 100%;
+}
+.recentColField a:hover {
+  text-decoration: none;
+}
+.recentSearch:hover {
+  background-color: #707070;
+  color: #ffffff;
+  cursor: pointer;
+}
+.recentCol {
+  border-right: 1px solid #e0e0e0;
+}
+.recentColBody {
+  border-right: 1px solid #e0e0e0;
+}
+
+.artTitle {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.artDate {
+  color: #98a3b9;
+}
+.allLink {
+  color: #fa5477;
+}
+
+/* OwlCarousel... */
+.carouselBlock {
+  margin: 3em 2em 0;
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background-color: #e5e5e5 !important;
+}
+
+.owl-prev {
+  position: absolute;
+  top: 22%;
+  left: -40px !important;
+  display: block !important;
+  border: 0px solid black;
+}
+
+.owl-next {
+  position: absolute;
+  top: 22%;
+  right: -40px !important;
+  display: block !important;
+  border: 0px solid black;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  font-size: 30px !important;
+}
+.owl-prev i,
+.owl-next i {
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  color: #ccc;
+}
+.owl-prev i {
+  left: 7px;
+}
+
+.owl-prev,
+.owl-next {
+  width: 25px;
+  height: 25px;
+  border-radius: 12px !important;
+  background-color: #fa5477 !important;
+  outline: none !important;
+}
+.footerCard {
+  width: 100%;
+  padding: 1rem 0;
+  line-height: 1.2;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+.viewIcon {
+  color: #844da0;
+  margin-right: 5px;
+}
+.badge-views {
+  margin-top: 5px;
+  font-size: 10px;
+  background-color: #844da0;
+  padding: 0.23em 1em;
+  padding-top: 0.5em;
+  border-radius: 20px;
+  color: white;
+}
+.artistName {
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.views {
+  font-size: 10px;
+  color: #f0f0f0;
+}
+/* dropdown */
+.Dropdown-control {
+  background-color: #fa5477;
+  box-shadow: 0px 12px 17px rgba(252, 121, 120, 0.4);
+  border-radius: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: Avenir;
+}
+.Dropdown-arrow {
+  border-color: #ffffff transparent transparent;
+  border-width: 7px 7px 0;
+  top: 17px;
+}
+.is-open .Dropdown-arrow {
+  border-color: transparent transparent #ffffff;
+  border-width: 0 7px 7px;
+}
+.mapIcon {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: blue;
+  padding: 5px;
+  color: white;
+  border-radius: 4px;
+}
+.bkm {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: white;
+  padding: 5px;
+  color: black;
+  border-radius: 4px;
+}
+.dfECAlign {
+  @include flex;
+  @include flex-just(flex-end);
+  @include flex-alignItems(center);
+}
+
+.cardContainer {
+  position: relative;
+  @include flex;
+  @include flex-dir(column);
+  @include flex-alignItems(center);
+  @include flex-just(space-between);
+  @include flex-alignItems(center);
+}
+.imageContainer {
+  @include flex;
+  @include flex-just(center);
+  @include flex-alignItems(center);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: #000000;
+  box-shadow: 1px 1px 3px #000000;
+}
+.artistImage {
+  height: 100px;
+  object-fit: cover;
+  width: 100%;
+}
+.containImg {
+  object-fit: contain;
+}
+.sliderTitle {
+  color: #ffffff;
+}
+.listContainer {
+  margin: 1rem 0;
+}
+.loader {
+  width: 100%;
+  //   background-color: green;
+  color: white;
+  font-size: 20;
+  text-align: center;
+}
+
+/* Eppo Features */
+.eppoFtContainer {
+  //   @include flex;
+  //   @include flex-dir(column);
+  //   @include flex-just(space-evenly);
+  background-image: url('../images/dailyDashboard.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  position: relative;
+}
+.eppoFtRow {
+  @include flex;
+  @include flex-dir(row);
+  @include flex-just(space-between);
+  @include flex-alignItems(center);
+  height: 225px;
+}
+.epftCol {
+  @include flex;
+  @include flex-just(center);
+  @include flex-dir(column);
+  width: 25%;
+  cursor: pointer;
+}
+.eppoFtRow > .epftCol:first-child {
+  text-align: right;
+  @include flex-alignItems(flex-end);
+}
+.eppoFtRow > .epftCol:last-child {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.epftTitle {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+.epftDesc {
+  color: #98a3b9;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.31px;
+  width: 90%;
+}
+.downArrow {
+  outline: none;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  z-index: 9999;
+}
+.arrowBtn {
+  cursor: pointer;
+  width: 60px;
+}
+
+/* Top Views */
+.topViewContainer {
+  background-color: #000000;
+  position: relative;
+  padding: 2rem 0;
+}
+
+/* Updates */
+.updatesContainer {
+  //   @include flex;
+  //   @include flex-dir(column);
+  //   @include flex-just(center);
+  //   @include flex-alignItems(center);
+  margin: 5rem 0;
+  position: relative;
+  color: #ffffff;
+}
+.updatesContainer img {
+  width: 100%;
+  height: 70px;
+}
+.updateTitle {
+  margin: 2rem 0;
+  font-weight: 900;
+  font-size: 56px;
+}
+.updatesColl {
+  @include flex;
+}
+.updateCardContainer {
+  margin: 1rem 0;
+}
+.upcMsg {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-top: 2rem;
+}
+.updateAuthorCtn {
+  @include flex;
+}
+.updatesContainer .updateAuthorCtn img {
+  width: 30px;
+  height: 30px;
+}
+.authorDetail {
+  @include flex;
+  @include flex-dir(column);
+}
+.authorDetail > p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+.authorDetail > p:last-child {
+  color: rgba(255, 255, 255, 0.50133);
+}
+.updateLogoImg {
+  height: 50%;
+}
+
+/*  TopCollection */
+
+.topTitle {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.topDate {
+  color: #98a3b9;
+}
+
+/* Collections Detail */
+.innerScroll {
+  /* min-height: calc(61vh + 5px);
+  max-height: calc(65vh);
+  overflow-y: auto; */
+  /* overflow-x: hidden; */
+}
+.collFilter {
+  @include flex;
+  @include flex-just(flex-end);
+  @include flex-alignItems(center);
+}
+.collContainer {
+  margin: '0.2rem 0';
+  width: 35%;
+}
+.upArrow {
+  outline: none;
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  z-index: 9999;
+}
+.space-between-flex {
+  @include flex;
+  @include flex-just(space-between);
+  @include flex-dir(column);
+  height: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .updatesContainer img {
+    height: 215px;
+  }
+  .media img {
+    width: 40px;
+    height: 40px;
+  }
+  .copyright,
+  .pvtxt {
+    font-size: 10px;
+  }
+  .arrowBtn {
+    width: 40px;
+  }
+  .eppoFtContainer {
+    background-size: 180px;
+  }
+  .epftDesc {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .imageContainer {
+    height: 120px;
+    width: 120px;
+  }
+  .artistImage {
+    height: 120px;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    font-size: 50px !important;
+  }
+  .owl-prev i,
+  .owl-next i {
+    top: -6px;
+    left: 12px;
+  }
+  .owl-prev i {
+    left: 10px;
+  }
+  .owl-prev,
+  .owl-next {
+    top: 25%;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px !important;
+  }
+  .owl-prev {
+    left: -50px !important;
+  }
+
+  .owl-next {
+    right: -50px !important;
+  }
+  .artistName,
+  .views {
+    font-size: 12px;
+  }
+  .badge-views {
+    font-size: 12px;
+  }
+  .eppoFtContainer {
+    background-size: 220px;
+  }
+  .epftTitle {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -1px;
+  }
+  .epftDesc {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: -0.31px;
+    width: 65%;
+  }
+  .epftCol {
+    width: 26%;
+  }
+  .updatesContainer img {
+    height: 250px;
+  }
+  .copyright,
+  .pvtxt {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .modal-dialog.modal-70w {
+    max-width: 650px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .imageContainer,
+  .artistImage {
+    height: 150px;
+    width: 150px;
+  }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    font-size: 50px !important;
+  }
+  .owl-prev i,
+  .owl-next i {
+    top: -6px;
+    left: 12px;
+  }
+  .owl-prev i {
+    left: 10px;
+  }
+  .owl-prev,
+  .owl-next {
+    top: 30%;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px !important;
+  }
+  .owl-prev {
+    left: -60px !important;
+  }
+  .owl-next {
+    right: -60px !important;
+  }
+  .artistName,
+  .views {
+    font-size: 14px;
+  }
+  .badge-views {
+    font-size: 14px;
+  }
+  .eppoFtContainer {
+    background-size: 270px;
+  }
+  .epftTitle {
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -1px;
+  }
+  .epftDesc {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.31px;
+    width: 45%;
+  }
+  .epftCol {
+    height: 80%;
+    width: 30%;
+  }
+  .updatesContainer img {
+    height: 130px;
+  }
+  .copyright,
+  .pvtxt {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .imageContainer,
+  .artistImage {
+    height: 150px;
+    width: 150px;
+  }
+  .updatesContainer img {
+    height: 160px;
+  }
+  .eppoFtContainer {
+    /* background-size: 25% 100%; */
+  }
+  .epftCol {
+    height: 70%;
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .imageContainer,
+  .artistImage {
+    height: 150px;
+    width: 150px;
+  }
+  .updatesContainer img {
+    height: 160px;
+  }
+  .eppoFtContainer {
+    /* background-size: 23% 100%; */
+  }
+  .epftCol {
+    height: 76%;
+    width: 38%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .eppoFtContainer {
+    /* background-size: 20% 100%; */
+  }
+  .updatesContainer img {
+    height: 200px;
+  }
+  .epftCol {
+    height: 70%;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .imageContainer,
+  .artistImage {
+    height: 180px;
+    width: 180px;
+  }
+  .eppoFtContainer {
+    /* background-size: 17% 100%; */
+  }
+  .updatesContainer img {
+    height: 200px;
+  }
+  .updateAuthorCtn img {
+    width: 30px;
+    height: 30px;
+  }
+  .epftCol {
+    height: 50%;
+    width: 42%;
+  }
+}
+.activeSearchItem {
+  background-color: #919191;
+  color: #ffffff;
+}
